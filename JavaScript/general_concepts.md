@@ -29,6 +29,15 @@ Perfect example of how the bubble effect works.
 - Scope
     - Function scope, block scope, variable scope
 - Prototype
+    - It is on every javascript function. 
+    - Object prototype and function prototype are different. 
+    - Function prototoype -> A functions prototype is the object instance that will become the prototype for all objectes created using this function as a constructor. function.prototype
+    - Object prototype -> An object protottype is the object instance from which the object is inherited. object.__proto__
+    - inheritance for the prototypes can be used with new. They point to the same memory prototype.
+    - Instance vs prototypes
+        - If age is specified: jim.age is 18 but jim.__proto__.age is still 29.
+        - if not then it will use the prototypes ages
+    - instance property overrides the prototype property.
 
 - Shadow Dom
     - Shadow host: The regular DOM node that the shadow DOM is attached to.
@@ -70,14 +79,19 @@ let b = 2;
 
 ```
 - Classes
+    - Syntactical sugar. 
+    - it is basicly a constructor function. 
+    - The properties can be manipulated with e.g. defineProperty.
+    - Classes have prototypes as well. 
+    - static properties and methods can be accesed before the initiation of the class.
 
 - Modules
 
 - Default Parameters
 
 - Rest and Spread Parameters
-    - Rest
-    - Spread
+    - Rest function(...arguments) infinte parameters
+    - Spread can be used for destructering arrays or merging objects.
 
 - Template Literals (string literals)
 - Async & Await (ES2016+)
