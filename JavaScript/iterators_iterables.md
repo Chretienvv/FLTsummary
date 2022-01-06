@@ -19,7 +19,7 @@
     - Definition: A function that can be paused and resumed at a later time, while having the ability to pass values to and from the fucntion at each pause point.
     - Syntax function* gen(){ }
         - Must include a astrix *
-    - Excuting the generator function alone does not execute its containing code.
+    - Executing the generator function alone does not execute its containing code.
     - To start an iterator you need to use next() on the function call.
 - Yield keyword signals the pause point of a generator function.
     - Send a value to the iterator,
